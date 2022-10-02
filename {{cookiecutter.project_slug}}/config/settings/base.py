@@ -88,15 +88,21 @@ THIRD_PARTY_APPS = [
     "rest_framework.authtoken",
     "corsheaders",
     "drf_spectacular",
-{%- endif %}
+{%- endif %}  
 ]
 
 LOCAL_APPS = [
     "{{ cookiecutter.project_slug }}.users",
     # Your stuff: custom apps go here
 ]
+
+
+NHW_APPS = [
+    "rest_framework",
+]
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS + NHW_APPS
 
 # MIGRATIONS
 # ------------------------------------------------------------------------------
